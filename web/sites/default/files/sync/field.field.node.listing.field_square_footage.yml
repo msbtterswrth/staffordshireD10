@@ -1,0 +1,23 @@
+uuid: 7fd945b5-46b5-4ec7-8e04-3a7ca67b7872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_square_footage
+    - node.type.listing
+id: node.listing.field_square_footage
+field_name: field_square_footage
+entity_type: node
+bundle: listing
+label: 'Square Footage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: 'Sq Ft'
+field_type: integer

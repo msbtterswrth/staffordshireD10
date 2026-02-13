@@ -1,0 +1,288 @@
+uuid: 366cc238-7d6a-4736-8931-6d2d1c0c97c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.listing.body
+    - field.field.node.listing.field_address
+    - field.field.node.listing.field_apartment
+    - field.field.node.listing.field_bathrooms
+    - field.field.node.listing.field_bedrooms
+    - field.field.node.listing.field_city
+    - field.field.node.listing.field_featured_image
+    - field.field.node.listing.field_map_link
+    - field.field.node.listing.field_meta_tags
+    - field.field.node.listing.field_rent
+    - field.field.node.listing.field_slides
+    - field.field.node.listing.field_square_footage
+    - field.field.node.listing.field_state
+    - field.field.node.listing.field_zip_code
+    - image.style.thumbnail
+    - node.type.listing
+  module:
+    - field_group
+    - image
+    - metatag
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_property_description
+        - group_address
+        - group_property_info
+        - group_images
+      label: tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: vertical
+    group_address:
+      children:
+        - field_address
+        - field_apartment
+        - field_city
+        - field_state
+        - field_zip_code
+        - field_map_link
+      label: Address
+      region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_property_info:
+      children:
+        - field_bedrooms
+        - field_bathrooms
+        - field_rent
+        - field_square_footage
+      label: 'Property Info'
+      region: content
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_images:
+      children:
+        - field_featured_image
+        - field_slides
+      label: Images
+      region: content
+      parent_name: group_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_property_description:
+      children:
+        - title
+        - body
+      label: 'Property Description'
+      region: content
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.listing.default
+targetEntityType: node
+bundle: listing
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_apartment:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bathrooms:
+    type: options_select
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bedrooms:
+    type: options_select
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_city:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_featured_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_map_link:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_rent:
+    type: number
+    weight: 28
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_slides:
+    type: entity_reference_paragraphs
+    weight: 27
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+  field_square_footage:
+    type: number
+    weight: 29
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_state:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_zip_code:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

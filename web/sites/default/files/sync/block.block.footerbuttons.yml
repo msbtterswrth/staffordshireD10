@@ -1,0 +1,29 @@
+uuid: 18c7fefd-76e4-4dcd-8034-b58e1a4149c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:33f0348b-e7e7-482e-8343-4270f66aeed8'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-7 pull-right'
+id: footerbuttons
+theme: staffordshire
+region: footer
+weight: -13
+provider: null
+plugin: 'block_content:33f0348b-e7e7-482e-8343-4270f66aeed8'
+settings:
+  id: 'block_content:33f0348b-e7e7-482e-8343-4270f66aeed8'
+  label: 'Footer Buttons'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

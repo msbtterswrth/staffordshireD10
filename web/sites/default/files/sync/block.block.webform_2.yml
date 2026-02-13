@@ -1,0 +1,32 @@
+uuid: 5533df55-7b42-42e1-8e91-23d29316e0d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.request_a_showing
+  module:
+    - system
+    - webform
+  theme:
+    - staffordshire
+id: webform_2
+theme: staffordshire
+region: bottom
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: request_a_showing
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /request-showing

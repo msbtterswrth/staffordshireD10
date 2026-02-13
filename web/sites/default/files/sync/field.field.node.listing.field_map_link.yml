@@ -1,0 +1,19 @@
+uuid: 76d2336f-1e87-47f1-bb37-8f3b3ca1c376
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_link
+    - node.type.listing
+id: node.listing.field_map_link
+field_name: field_map_link
+entity_type: node
+bundle: listing
+label: 'Map Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

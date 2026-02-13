@@ -1,0 +1,17 @@
+uuid: 1a5bc113-4d69-4cc1-9864-7a6e3ece1b1d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: AIyhc8Dfbrc5t1f5Eyg6FtE1-QeqcU3ogQLiCF3vJZ8
+id: phone_types
+label: 'Phone type'
+category: Demographic
+likert: false
+options: |
+  Home: Home
+  Office: Office
+  Cell: Cell

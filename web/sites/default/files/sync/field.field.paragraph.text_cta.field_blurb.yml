@@ -1,0 +1,19 @@
+uuid: c3801858-26de-494d-b85c-a0253bfe80dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blurb
+    - paragraphs.paragraphs_type.text_cta
+id: paragraph.text_cta.field_blurb
+field_name: field_blurb
+entity_type: paragraph
+bundle: text_cta
+label: Blurb
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

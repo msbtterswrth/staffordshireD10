@@ -1,0 +1,30 @@
+uuid: cc1004ad-00f2-4b89-b8a7-085bcb15303a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.2000x800
+    - image.style.600x900
+    - image.style.900x600
+  theme:
+    - staffordshire
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 2000x800
+    breakpoint_id: staffordshire.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 900x600
+    breakpoint_id: staffordshire.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 600x900
+    breakpoint_id: staffordshire.sm-max
+    multiplier: 1x
+breakpoint_group: staffordshire
+fallback_image_style: 600x900

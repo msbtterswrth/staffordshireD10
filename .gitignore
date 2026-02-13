@@ -7,10 +7,10 @@ core
 vendor/
 web/sites/*/settings.*.php
 web/sites/*/services*.yml
-web/sites/*/files
+web/sites/*/files/styles*
+web/sites/*/files/php*
 web/sites/*/private
 web/sites/simpletest
-web/sites/default/files*
 *.sql*
 
 

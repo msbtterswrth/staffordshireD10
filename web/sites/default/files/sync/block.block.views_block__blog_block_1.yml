@@ -1,0 +1,34 @@
+uuid: 646a6b89-b6a1-43c8-a4a1-2288ca1aa494
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: 'box4 title1'
+id: views_block__blog_block_1
+theme: staffordshire
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:blog-block_1'
+settings:
+  id: 'views_block:blog-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/blog/*\r\n/property-listings"

@@ -1,0 +1,15 @@
+uuid: 448f1ade-7e56-4144-94ad-8532feb23109
+langcode: en
+status: true
+dependencies: {  }
+name: '4_3'
+label: '4:3'
+effects:
+  a774d1c1-49d4-4486-96b2-7abee680c1d9:
+    uuid: a774d1c1-49d4-4486-96b2-7abee680c1d9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      anchor: center-center

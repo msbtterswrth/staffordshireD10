@@ -1,0 +1,35 @@
+uuid: f33e29b1-74fa-4def-8d22-62b70eda2816
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4f15aa6d-8462-4546-9441-4f36e9399620'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: box
+id: scheduleshowing
+theme: staffordshire
+region: sidebar
+weight: -9
+provider: null
+plugin: 'block_content:4f15aa6d-8462-4546-9441-4f36e9399620'
+settings:
+  id: 'block_content:4f15aa6d-8462-4546-9441-4f36e9399620'
+  label: 'Schedule Showing'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /property-listings

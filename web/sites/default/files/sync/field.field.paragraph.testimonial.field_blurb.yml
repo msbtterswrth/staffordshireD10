@@ -1,0 +1,19 @@
+uuid: 0521bc14-8824-46bc-8f0d-2bc32f742f54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blurb
+    - paragraphs.paragraphs_type.testimonial
+id: paragraph.testimonial.field_blurb
+field_name: field_blurb
+entity_type: paragraph
+bundle: testimonial
+label: Blurb
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

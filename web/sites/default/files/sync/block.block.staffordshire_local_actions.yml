@@ -1,0 +1,20 @@
+uuid: 0ffbd21b-d3b2-44cd-b196-f16a7e688e33
+langcode: en
+status: true
+dependencies:
+  theme:
+    - staffordshire
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: staffordshire_local_actions
+theme: staffordshire
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 39698aed-7acf-4afb-a310-1179ab67288a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - staffordshire
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: staffordshire_help
+theme: staffordshire
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

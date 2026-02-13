@@ -1,0 +1,35 @@
+uuid: 88095254-e544-4bc1-8687-66374eec742e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:560a1b75-625d-4eb7-b3db-2ae0afb7628b'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: box4
+id: excelrealtybrokerage
+theme: staffordshire
+region: sidebar
+weight: -8
+provider: null
+plugin: 'block_content:560a1b75-625d-4eb7-b3db-2ae0afb7628b'
+settings:
+  id: 'block_content:560a1b75-625d-4eb7-b3db-2ae0afb7628b'
+  label: 'Excel Realty Brokerage'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /property-listings

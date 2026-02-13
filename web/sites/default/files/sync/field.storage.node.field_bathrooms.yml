@@ -1,0 +1,51 @@
+uuid: 4cf95c11-8338-4555-9f55-ae1b3c2123af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_bathrooms
+field_name: field_bathrooms
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '1'
+    -
+      value: '1.5'
+      label: '1.5'
+    -
+      value: '2'
+      label: '2'
+    -
+      value: '2.5'
+      label: '2.5'
+    -
+      value: '3'
+      label: '3'
+    -
+      value: '3.5'
+      label: '3.5'
+    -
+      value: '4'
+      label: '4'
+    -
+      value: '4.5'
+      label: '4.5'
+    -
+      value: '5'
+      label: '5'
+    -
+      value: '5.5'
+      label: '5.5'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

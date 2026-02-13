@@ -1,0 +1,23 @@
+uuid: 53c70928-3536-4092-b90f-7022091faf8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_style_quality
+name: slide
+label: Slide
+effects:
+  47ec1f64-313d-4b31-84f1-363b41ebd35c:
+    uuid: 47ec1f64-313d-4b31-84f1-363b41ebd35c
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 500
+      upscale: true
+  fad5a082-3770-49b2-8199-f9d8fcb167cc:
+    uuid: fad5a082-3770-49b2-8199-f9d8fcb167cc
+    id: image_style_quality
+    weight: 2
+    data:
+      quality: 75

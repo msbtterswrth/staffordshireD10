@@ -1,0 +1,27 @@
+uuid: df6298a1-a7ed-416a-896d-3f2c1c84a9df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_image
+    - image.style.slide
+    - paragraphs.paragraphs_type.slide
+  module:
+    - image
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: slide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

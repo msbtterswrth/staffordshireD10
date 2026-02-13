@@ -1,0 +1,35 @@
+uuid: 0c96e17e-e561-44c7-9230-974666787fca
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6067b679-b30f-4a25-802b-f81f82185895'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: full-cta
+id: community.quality.commitment.
+theme: staffordshire
+region: feature
+weight: -13
+provider: null
+plugin: 'block_content:6067b679-b30f-4a25-802b-f81f82185895'
+settings:
+  id: 'block_content:6067b679-b30f-4a25-802b-f81f82185895'
+  label: 'Community. Quality. Commitment.'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/property-listings*\r\n/excel-realty-brokerage"

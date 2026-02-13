@@ -1,0 +1,29 @@
+uuid: 7032eb0e-c460-4646-b13e-e296b1b8dd2b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d1877e0d-3813-458c-a33d-1189a1f82c5d'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: 'col-xs-2 visible-xs'
+id: mobilemenutoggle
+theme: staffordshire
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:d1877e0d-3813-458c-a33d-1189a1f82c5d'
+settings:
+  id: 'block_content:d1877e0d-3813-458c-a33d-1189a1f82c5d'
+  label: 'mobile menu toggle'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 1dff0eaa-60ff-4fbe-b4f4-18a8bbfdc9e9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: 'http://staffordshirerealty.com'
+  description: "Staffordshire Property Management is Baltimore, Maryland's most reliable property management company. We are committed to providing comprehensive and personalized property management solutions in Baltimore, MD."
+  robots: 'index, follow'
+  shortlink: '[site:url]'
+  title: 'Property Management in Baltimore | Staffordshire Realty'
+  og_image_url: 'http://staffordshirerealty.com/sites/default/files/2017-12/home-bg-fall.jpg'

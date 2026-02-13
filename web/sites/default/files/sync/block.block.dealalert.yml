@@ -1,0 +1,21 @@
+uuid: d5e773c7-6d80-40ca-991e-159773738e6e
+langcode: en
+status: false
+dependencies:
+  theme:
+    - staffordshire
+id: dealalert
+theme: staffordshire
+region: offcanvas
+weight: 0
+provider: null
+plugin: 'block_content:f143c4ee-a221-422d-b5f1-1b9b104476bf'
+settings:
+  id: 'block_content:f143c4ee-a221-422d-b5f1-1b9b104476bf'
+  label: 'Deal Alert'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

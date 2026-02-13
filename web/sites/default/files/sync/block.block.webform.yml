@@ -1,0 +1,32 @@
+uuid: a11e16a6-5122-4122-8075-5fc3e33cd5b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.test
+  module:
+    - system
+    - webform
+  theme:
+    - staffordshire
+id: webform
+theme: staffordshire
+region: bottom
+weight: -11
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: test
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /contact-us

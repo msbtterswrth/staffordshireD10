@@ -1,0 +1,38 @@
+uuid: 718f13ac-3b46-4a46-98f2-2b02303dbc68
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonials.body
+    - node.type.testimonials
+  module:
+    - smart_trim
+    - user
+id: node.testimonials.teaser
+targetEntityType: node
+bundle: testimonials
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: words
+      trim_suffix: ''
+      more:
+        display_link: false
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: More
+        aria_label: 'Read more about [node:title]'
+      summary_handler: ignore
+      trim_options:
+        text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

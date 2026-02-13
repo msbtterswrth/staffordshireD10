@@ -1,0 +1,22 @@
+uuid: c69b9009-79b1-47a1-8017-8906f1772ed5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - staffordshire
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: staffordshire_content
+theme: staffordshire
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

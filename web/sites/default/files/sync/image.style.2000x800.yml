@@ -1,0 +1,15 @@
+uuid: fc22aeb0-ebb8-48f0-b769-0a26389df9cf
+langcode: en
+status: true
+dependencies: {  }
+name: 2000x800
+label: '2000x800 (5:2)'
+effects:
+  d61faf66-8151-4b58-a484-5df01a973d5b:
+    uuid: d61faf66-8151-4b58-a484-5df01a973d5b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2000
+      height: 800
+      anchor: center-center

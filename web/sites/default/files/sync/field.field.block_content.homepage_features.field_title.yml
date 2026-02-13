@@ -1,0 +1,19 @@
+uuid: 919ad5b4-b120-44f0-9b7a-83229806ef9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_features
+    - field.storage.block_content.field_title
+id: block_content.homepage_features.field_title
+field_name: field_title
+entity_type: block_content
+bundle: homepage_features
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 51fda7cf-d4d4-44df-a679-d635daefe526
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.property_listings
+  module:
+    - system
+    - views
+  theme:
+    - claro
+id: exposedformproperty_listingspage_1
+theme: claro
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:property_listings-page_1'
+settings:
+  id: 'views_exposed_filter_block:property_listings-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /property-listings

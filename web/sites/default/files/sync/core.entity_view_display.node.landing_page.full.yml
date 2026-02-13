@@ -1,0 +1,24 @@
+uuid: ea3e45f1-a1d4-4721-9eee-4aa057180d2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.landing_page.field_content
+    - field.field.node.landing_page.field_hero
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.full
+targetEntityType: node
+bundle: landing_page
+mode: full
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_content: true
+  field_hero: true

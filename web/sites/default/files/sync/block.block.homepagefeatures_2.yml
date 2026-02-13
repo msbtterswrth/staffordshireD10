@@ -1,0 +1,35 @@
+uuid: 857f70fa-ad51-4fd7-9d7f-d8af29f50db5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_features:ca3efef3-d9bf-4f4c-a068-1d7e2af247a1'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: row
+id: homepagefeatures_2
+theme: staffordshire
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:ca3efef3-d9bf-4f4c-a068-1d7e2af247a1'
+settings:
+  id: 'block_content:ca3efef3-d9bf-4f4c-a068-1d7e2af247a1'
+  label: 'Interior Features'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /property-management

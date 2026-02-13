@@ -1,0 +1,30 @@
+uuid: 6e9067d8-80fb-40a2-ae1b-d059d6eb4968
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c9ec270c-c2e0-48bc-8d05-8788cb731fcf'
+  module:
+    - block_content
+    - system
+  theme:
+    - staffordshire
+id: staffordshire_dealalert
+theme: staffordshire
+region: drawer
+weight: 0
+provider: null
+plugin: 'block_content:c9ec270c-c2e0-48bc-8d05-8788cb731fcf'
+settings:
+  id: 'block_content:c9ec270c-c2e0-48bc-8d05-8788cb731fcf'
+  label: 'Deal Alert'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

@@ -1,0 +1,22 @@
+uuid: 8fe1e074-508e-42ea-a1ff-300921be88fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - staffordshire
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: staffordshire_messages
+theme: staffordshire
+region: content_top
+weight: -15
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

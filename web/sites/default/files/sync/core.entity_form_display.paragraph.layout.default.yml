@@ -1,0 +1,45 @@
+uuid: deb10f88-1960-431f-977e-c00ad59d66a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout.field_items
+    - field.field.paragraph.layout.field_layout
+    - field.field.paragraph.layout.field_title
+    - paragraphs.paragraphs_type.layout
+  module:
+    - paragraphs
+id: paragraph.layout.default
+targetEntityType: paragraph
+bundle: layout
+mode: default
+content:
+  field_items:
+    type: entity_reference_paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+  field_layout:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,15 @@
+uuid: f8146071-3d36-4775-96c1-a52e9bca82f8
+langcode: en
+status: true
+dependencies: {  }
+name: 600x900
+label: '600x900 (2:3)'
+effects:
+  d74bc36a-3794-4fb9-ac5e-81fc7d2e7c86:
+    uuid: d74bc36a-3794-4fb9-ac5e-81fc7d2e7c86
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 900
+      anchor: center-center

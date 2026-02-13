@@ -1,0 +1,23 @@
+uuid: 866190ec-2dc0-4e18-9b3d-150085461400
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rent
+    - node.type.listing
+id: node.listing.field_rent
+field_name: field_rent
+entity_type: node
+bundle: listing
+label: Rent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

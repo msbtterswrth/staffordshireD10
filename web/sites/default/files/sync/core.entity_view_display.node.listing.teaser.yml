@@ -1,0 +1,135 @@
+uuid: 59bb1367-1fa7-4fd4-9e72-bbae4354bd58
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.listing.body
+    - field.field.node.listing.field_address
+    - field.field.node.listing.field_apartment
+    - field.field.node.listing.field_bathrooms
+    - field.field.node.listing.field_bedrooms
+    - field.field.node.listing.field_city
+    - field.field.node.listing.field_featured_image
+    - field.field.node.listing.field_map_link
+    - field.field.node.listing.field_meta_tags
+    - field.field.node.listing.field_rent
+    - field.field.node.listing.field_slides
+    - field.field.node.listing.field_square_footage
+    - field.field.node.listing.field_state
+    - field.field.node.listing.field_zip_code
+    - image.style.16_9
+    - node.type.listing
+  module:
+    - image
+    - options
+    - smart_trim
+    - user
+id: node.listing.teaser
+targetEntityType: node
+bundle: listing
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 22
+      trim_type: words
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more:
+        display_link: true
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: 'Read More'
+        aria_label: 'Read more about [node:title]'
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_apartment:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_bathrooms:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_bedrooms:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_city:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_featured_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: '16_9'
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_rent:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_state:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_zip_code:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden:
+  field_map_link: true
+  field_meta_tags: true
+  field_slides: true
+  field_square_footage: true
+  links: true

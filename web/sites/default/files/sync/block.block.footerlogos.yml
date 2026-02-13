@@ -1,0 +1,29 @@
+uuid: 29413e5a-f124-433b-b9ba-764f1393c91f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa070fc6-20ec-4ed5-b502-68e1b188901c'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: col-xs-12
+id: footerlogos
+theme: staffordshire
+region: footer
+weight: -12
+provider: null
+plugin: 'block_content:fa070fc6-20ec-4ed5-b502-68e1b188901c'
+settings:
+  id: 'block_content:fa070fc6-20ec-4ed5-b502-68e1b188901c'
+  label: 'footer logos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

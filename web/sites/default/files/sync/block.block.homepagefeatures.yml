@@ -1,0 +1,31 @@
+uuid: 55f325a4-7f9e-4f2f-bad7-9e0eda2fbc1e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:homepage_features:ca3efef3-d9bf-4f4c-a068-1d7e2af247a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - staffordshire
+id: homepagefeatures
+theme: staffordshire
+region: top
+weight: -12
+provider: null
+plugin: 'block_content:ca3efef3-d9bf-4f4c-a068-1d7e2af247a1'
+settings:
+  id: 'block_content:ca3efef3-d9bf-4f4c-a068-1d7e2af247a1'
+  label: 'Community. Quality. Commitment. '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

@@ -1,0 +1,46 @@
+uuid: eab1935c-cfbb-4d83-b62e-447d7d9c4815
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.field_image
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - smart_trim
+    - user
+_core:
+  default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 30
+      trim_type: words
+      trim_suffix: ''
+      more:
+        display_link: false
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: 'Read More'
+        aria_label: 'Read more about [node:title]'
+      summary_handler: trim
+      trim_options:
+        text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  field_meta_tags: true
+  field_tags: true
+  links: true

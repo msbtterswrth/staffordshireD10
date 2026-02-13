@@ -1,0 +1,73 @@
+uuid: 2bc65cdd-0571-4491-b711-06bf05468532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items
+    - paragraphs.paragraphs_type.featured_media
+    - paragraphs.paragraphs_type.layout
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.slides
+    - paragraphs.paragraphs_type.testimonials
+    - paragraphs.paragraphs_type.text_cta
+    - paragraphs.paragraphs_type.webform
+    - paragraphs.paragraphs_type.wysiwyg
+  module:
+    - entity_reference_revisions
+id: paragraph.section.field_items
+field_name: field_items
+entity_type: paragraph
+bundle: section
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slides: slides
+      featured_media: featured_media
+      layout: layout
+      text_cta: text_cta
+      wysiwyg: wysiwyg
+      testimonials: testimonials
+      webform: webform
+    negate: 0
+    target_bundles_drag_drop:
+      featured_media:
+        weight: 11
+        enabled: true
+      hero:
+        weight: 7
+        enabled: false
+      layout:
+        weight: 11
+        enabled: true
+      section:
+        weight: 8
+        enabled: false
+      slide:
+        weight: 9
+        enabled: false
+      slides:
+        weight: 10
+        enabled: true
+      testimonial:
+        weight: 13
+        enabled: false
+      testimonials:
+        weight: 14
+        enabled: true
+      text_cta:
+        weight: 11
+        enabled: true
+      webform:
+        weight: 21
+        enabled: true
+      wysiwyg:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

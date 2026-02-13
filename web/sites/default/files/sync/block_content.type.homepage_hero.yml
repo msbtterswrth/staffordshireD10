@@ -1,0 +1,8 @@
+uuid: 13279584-8d5d-4a29-89e3-784ffaf0e432
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_hero
+label: 'Homepage Hero'
+revision: false
+description: ''

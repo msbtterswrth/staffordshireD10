@@ -1,0 +1,27 @@
+uuid: a73c13b2-7e4e-47ce-8b88-97dbd5c5b964
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slide
+  module:
+    - image
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

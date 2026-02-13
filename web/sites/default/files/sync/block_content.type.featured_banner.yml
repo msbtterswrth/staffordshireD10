@@ -1,0 +1,8 @@
+uuid: 11ff3df7-c701-4a34-bcee-7f6e24319dd5
+langcode: en
+status: true
+dependencies: {  }
+id: featured_banner
+label: 'Featured Banner'
+revision: false
+description: ''

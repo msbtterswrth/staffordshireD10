@@ -1,0 +1,70 @@
+uuid: 9ca7b589-4fa1-4b4a-bf75-0f8d7a571df4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Superscript
+            - Subscript
+            - '-'
+            - RemoveFormat
+        -
+          name: 'Text Alignment'
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - ImceImage
+            - Table
+            - HorizontalRule
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - Styles
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Source
+  plugins:
+    stylescombo:
+      styles: "ul.two-col|Two columns lists\r\na.btn.blue|Blue Button\r\na.btn.green|Green Button\r\na.btn.orange|Orange Button\r\ndiv.box1|Blue Box\r\ndiv.box2|Dark Blue Box"
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

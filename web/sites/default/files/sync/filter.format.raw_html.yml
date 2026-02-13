@@ -1,0 +1,17 @@
+uuid: f2ddd488-80b8-4af2-ad1b-fdc8babfc37e
+langcode: en
+status: true
+dependencies:
+  module:
+    - codefilter
+name: 'Raw HTML'
+format: raw_html
+weight: 0
+filters:
+  codefilter:
+    id: codefilter
+    provider: codefilter
+    status: true
+    weight: 0
+    settings:
+      nowrap_expand: '0'

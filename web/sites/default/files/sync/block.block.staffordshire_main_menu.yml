@@ -1,0 +1,31 @@
+uuid: 2943771a-f835-4113-a253-55540bf57e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-8 nav'
+_core:
+  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
+id: staffordshire_main_menu
+theme: staffordshire
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,37 @@
+uuid: 67175933-4b05-4fdc-9512-1965d1993b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_features
+    - field.storage.block_content.field_featured_ctas
+    - paragraphs.paragraphs_type.text_cta
+  module:
+    - entity_reference_revisions
+id: block_content.homepage_features.field_featured_ctas
+field_name: field_featured_ctas
+entity_type: block_content
+bundle: homepage_features
+label: 'Featured CTAs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_cta: text_cta
+    negate: 0
+    target_bundles_drag_drop:
+      slide:
+        weight: 4
+        enabled: false
+      slides:
+        weight: 5
+        enabled: false
+      text_cta:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

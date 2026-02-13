@@ -1,0 +1,31 @@
+uuid: ee3fa319-c9c0-4953-b5ac-dc60ce4ff5ba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:featured_banner:29a56493-6356-4a52-a25f-aba465631534'
+  module:
+    - block_content
+    - system
+  theme:
+    - staffordshire
+id: the_staffordshire_difference
+theme: staffordshire
+region: feature
+weight: -14
+provider: null
+plugin: 'block_content:29a56493-6356-4a52-a25f-aba465631534'
+settings:
+  id: 'block_content:29a56493-6356-4a52-a25f-aba465631534'
+  label: 'The Staffordshire Difference'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

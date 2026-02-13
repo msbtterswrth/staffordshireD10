@@ -1,0 +1,33 @@
+uuid: 6343697e-b854-4988-94a4-61ca54e6a66c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.property_listings
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - staffordshire
+third_party_settings:
+  block_class:
+    classes: 'filters box hidden-xs'
+id: staffordshire_exposedformproperty_listingspage_1
+theme: staffordshire
+region: sidebar
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:property_listings-page_1'
+settings:
+  id: 'views_exposed_filter_block:property_listings-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /property-listings

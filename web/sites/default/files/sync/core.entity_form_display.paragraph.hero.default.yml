@@ -1,0 +1,54 @@
+uuid: 139e078b-7a86-4b95-b392-18925202ccaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_body
+    - field.field.paragraph.hero.field_form
+    - field.field.paragraph.hero.field_image
+    - field.field.paragraph.hero.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.hero
+  module:
+    - image
+    - text
+    - webform
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_form:
+    type: webform_entity_reference_select
+    weight: 3
+    region: content
+    settings:
+      default_data: true
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
