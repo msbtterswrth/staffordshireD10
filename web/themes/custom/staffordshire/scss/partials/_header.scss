@@ -1,0 +1,186 @@
+.drawer {
+    background: $gold;
+    padding: 20px;
+    h3 {
+        margin: 0;
+        a.btn {
+            @include breakpoint(xs) {
+                display: block;
+                float: none!important;
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+.header {
+    padding:10px 0;
+    #block-staffordshire-branding {
+        .nav-open & {
+            @include breakpoint(xs) {
+                position: fixed;
+                z-index: 9;
+            }
+        }
+    }
+    .logo {
+        position: relative;
+        z-index: 9;
+        .white-logo {
+            display:none;
+        }
+    }
+    #block-mobilemenutoggle {
+        .nav-open & {
+            @include breakpoint(xs) {
+                position: fixed;
+                z-index: 9;
+                right: 0;
+            }
+        }
+    }
+    .nav-toggle  {
+        font-size: 33px;
+        color: #fff;
+        margin-top: 20px;
+        position: relative;
+        z-index: 9;
+        @include rotate(0);
+        @include transform-origin(15px);
+        @include transition (transform .3s cubic-bezier(0.0, 0.0, 0.2, 1));
+        .nav-open &{
+            @include rotate(90);   
+            @include breakpoint(xs) {
+                color: $blue!important;
+            }
+        }
+        .scroll:not(.nav-open) &{
+            color:$blue;
+            @include breakpoint(xs) {
+                margin-top:0;
+            }
+        }
+        @include breakpoint(xs) {
+            color: $blue;
+            margin-top:10px;
+            .home-wrap &{
+                color:#fff;
+            }
+            .nav-open &{
+                margin-top:10px;
+            }
+        }
+    }
+    .nav {
+        @include breakpoint(xs) {
+            position:fixed;
+            top:0;
+            width:100%;
+            left:0;
+            background:#f5f5f5;
+            padding:100px 40px;
+            height: 100vh;
+            z-index: 2;
+            @include translate(100%,0);
+            @include transition(transform .3s linear);
+            .nav-open &{
+                @include translate(0,0);
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding:0;
+            margin:0;
+            text-align:right;
+            @include breakpoint(xs) {
+                text-align: left;
+            }
+            li {
+                display:inline-block;
+                font-size: 22px;
+                vertical-align: middle;
+                padding:20px 30px;
+                @include breakpoint(md) {
+                    padding:10px 15px;
+                }
+                @include breakpoint(sm) {
+                    padding:10px;
+                    font-size: 18px;
+                }
+                @include breakpoint(xs) {
+                    display: block;
+                    padding:30px 0;
+                    + li {
+                        border-top:1px solid darken($blue,5%);
+                    }
+                }
+                a {
+                    color:$blue;
+                    font-weight: 300;
+                    text-decoration: none;
+                    position: relative;
+                    overflow: hidden;
+                    display: block;
+                    padding:10px 0 5px;
+                    @include breakpoint(md) {
+                        padding:5px 0px;
+                    }
+                    @include breakpoint(xs) {
+                        text-transform: uppercase;
+                        padding:0;
+                    }
+                    &::before {
+                        background:$blue;
+                        content:"";
+                        position: absolute;
+                        left: 0;
+                        top:100%;
+                        margin-top: -5px;
+                        height:2px;
+                        width: 100%;
+                        @include translate(-100%,0);
+                        @include transition(transform .3s linear);
+                        @include breakpoint(xs) {
+                            display: none;
+                        }
+                    }
+                    &:hover, &.is-active {
+                        &::before {
+                            @include translate(0%,0);
+                        }
+                    }
+                    &.is-active {
+                        @include breakpoint(xs) {
+                            color:$green;
+                        }
+                    }
+                    &.btn {
+                        border:1px solid $blue;
+                        padding:20px 30px;
+                        @include transition(border .3s linear, background .3s linear, color .3s linear);
+                        @include breakpoint(sm) {
+                            padding:10px 15px;
+                            font-size: 16px;
+                        }
+                        @include breakpoint(xs) {
+                            border:none!important;
+                            padding: 0!important;
+                            font-size: 22px;
+                        }
+                        &::before {
+                            display: none;
+                        }
+                        &:hover {
+                            border:1px solid darken($blue,10%);
+                            background: darken($blue,10%);
+                            color:#fff;
+                            @include breakpoint(xs) {
+                                background:none!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

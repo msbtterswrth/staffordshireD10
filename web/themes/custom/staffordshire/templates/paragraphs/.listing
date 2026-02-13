@@ -1,0 +1,15 @@
+drwxrwxr-x    2 9784     1218         4096 Mar 13  2021 .
+drwxrwxrwx    6 9784     1218         4096 Mar 12  2021 ..
+-rw-r--r--    1 9784     1218          217 Apr 06  2021 paragraph--accordion.html.twig
+-rw-r--r--    1 9784     1218          296 Apr 06  2021 paragraph--accordions.html.twig
+-rw-r--r--    1 9784     1218          794 Apr 06  2021 paragraph--featured-media.html.twig
+-rw-r--r--    1 9784     1218          338 Mar 13  2021 paragraph--form.html.twig
+-rw-r--r--    1 9784     1218           50 Apr 06  2021 paragraph--from-library.html.twig
+-rw-r--r--    1 9784     1218          756 Apr 06  2021 paragraph--hero.html.twig
+-rw-r--r--    1 9784     1218          506 Apr 06  2021 paragraph--layout.html.twig
+-rw-r--r--    1 9784     1218          665 Apr 06  2021 paragraph--section.html.twig
+-rw-rwxr--    1 9784     1218          121 Apr 06  2021 paragraph--slide.html.twig
+-rw-rwxr--    1 9784     1218          259 Apr 06  2021 paragraph--slides.html.twig
+-rw-rwxr--    1 9784     1218          246 Apr 06  2021 paragraph--text-cta.html.twig
+-rw-rw-r--    1 9784     1218          338 Apr 06  2021 paragraph--webform.html.twig
+-rw-r--r--    1 9784     1218          572 Apr 06  2021 paragraph--wysiwyg.html.twig

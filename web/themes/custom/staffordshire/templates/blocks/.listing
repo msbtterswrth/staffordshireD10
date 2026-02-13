@@ -1,0 +1,11 @@
+drwxrwxr-x    2 9784     1218         4096 Mar 12  2021 .
+drwxrwxrwx    6 9784     1218         4096 Mar 12  2021 ..
+-rw-rwxr--    1 9784     1218          420 Apr 06  2021 block--custom--featured-banner.html.twig
+-rw-rwxr--    1 9784     1218          264 Apr 06  2021 block--custom--homepage-features.html.twig
+-rw-rwxr--    1 9784     1218          397 Apr 06  2021 block--custom--homepage-hero.html.twig
+-rw-r--r--    1 9784     1218         1453 Apr 06  2021 block--node-block--content.html.twig
+-rw-r--r--    1 9784     1218         1328 Apr 06  2021 block--node-block--hero.html.twig
+-rw-r--r--    1 9784     1218         1401 Apr 06  2021 block--node-block--sidebar.html.twig
+-rw-rwxr--    1 9784     1218          956 Apr 06  2021 block--system-branding-block.html.twig
+-rw-rwxr--    1 9784     1218          198 Apr 06  2021 block--views-exposed-filter-block.html.twig
+-rw-rwxr--    1 9784     1218         1431 Apr 06  2021 block.html.twig

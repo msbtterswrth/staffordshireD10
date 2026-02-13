@@ -1,0 +1,225 @@
+.home-wrap {
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        background: transparent;
+        padding:40px 0;
+        @include transition(background .3s linear, padding .3s linear);
+        .logo {
+            .color-logo {
+                display: none;
+                .nav-open & {
+                    display: block;
+                    @include breakpoint(xs) {
+                        width:100%;
+                    }
+                }
+            }
+            .white-logo {
+                display:block;
+                .nav-open & {
+                    display: none;
+                }
+            }
+        }
+        .nav {
+            ul {
+                li {
+                    a {
+                        color:#fff;
+                        .nav-open & {
+                            color:$blue;
+                        }
+                        &::before {
+                            background:#fff;
+                        }
+                        &.btn {
+                            border:1px solid #fff;
+                            &:hover {
+                                background:rgba(#fff,.2)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .scroll &{
+            background:#fff;
+            padding:10px 0;
+            margin: 0!important;
+            .white-logo {
+                display: none;
+            }
+            .color-logo {
+                display:block;
+                width: 66%;
+            }
+            .nav {
+                ul {
+                    li {
+                        padding:0 30px;
+                        @include breakpoint(xs) {
+                            padding:30px 0;
+                        }
+                        a {
+                            color:$blue;
+                            &::before {
+                                background:$blue;
+                            }
+                            &.btn {
+                                border:1px solid $blue;
+                                padding:15px 30px;
+                                @include breakpoint(xs) {
+                                    padding:0;
+                                }
+                                &:hover {
+                                    background: darken($blue,10%);
+                                    color:#fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        .bg {
+            height:50vh;
+            min-height: 600px;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+            @include breakpoint(sm){
+                min-height:450px;
+            }
+            @include breakpoint(xs){
+                min-height:100vh;
+            }
+            h1 {
+                color:#fff;
+                font-size: 60px;
+                font-weight: 900;
+                letter-spacing:1px;
+                margin:0;
+                position: absolute;
+                top:50%;
+                left: 0;
+                width:100%;
+                text-align: center;
+                @include translate(0,-50%);
+                @include breakpoint(xs) {
+                    font-size:50px;
+                }
+            }
+        }
+        .scroll {
+            position: absolute;
+            width:100%;
+            text-align: center;
+            bottom:100px;
+            @include breakpoint(xs) {
+                display:none;
+            }
+            a {
+                color:#fff;
+                text-decoration:none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .top {
+        padding:80px 0 120px;
+        background:$blue;
+        margin-bottom: 0;
+        &::before {
+            content: "Baltimore Hampden MT. Washington Canton Fells Point Roland Park Gwynn Oak Federal Hill Catonsville Inner Harbor Waverly Towson Belair Belvedere Charles Bolton Hill Upton Seton Hill Locust Point Pigtown Patterson Park Highlandtown Bayview Pimlico Overlea Loch Raven";
+            font-size: 75px;
+            position: absolute;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: #3e4d77;
+            line-height: 100px;
+            text-align: justify;
+            letter-spacing: 1px;
+            width: 100%;
+            left: -10px;
+            top: 0;
+        }
+    }
+    .main {
+        display:none;
+    }
+    .feature {
+        .bg {
+            height:40vh;
+            min-height: 650px;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+            color:#fff;
+            text-align:center;
+            @include breakpoint(sm){
+                height:auto;
+            }
+            @include breakpoint(xs){
+                height:auto;
+            }
+            &::before {
+                content: "";
+                width:100%;
+                height:100%;
+                left:0;
+                top:0;
+                position: absolute;
+                background:rgba($blue,.6);
+            }
+            .inner {
+                position: absolute;
+                top:50%;
+                left: 0;
+                width:100%;
+                @include translate(0,-50%);
+                @include breakpoint(sm) {
+                    position: relative;
+                    top:0;
+                    @include translate(0,0);
+                    
+                }
+                @include breakpoint(xs) {
+                    position: relative;
+                    top:0;
+                    @include translate(0,0);
+                    
+                }
+                h2 {
+                    color:#fff;
+                    margin:0;
+                    text-align: center;
+                    margin: 0 0 100px 0;
+                    position:relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width:30%;
+                        height:4px;
+                        background:#fff;
+                        left:50%;
+                        top:100%;
+                        margin-top:35px;
+                        @include translate(-50%,0);
+                    }
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: 300;
+                    width:80%;
+                    margin: 0 auto 30px;
+                }
+            }
+        }
+    }
+}

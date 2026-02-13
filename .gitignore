@@ -5,19 +5,21 @@
 # @see https://www.drupal.org/project/drupal/issues/3257119
 core
 vendor/
-sites/*/settings.*.php
-sites/*/services*.yml
-sites/*/files
-sites/*/private
-sites/simpletest
-sites/default/files*
+web/sites/*/settings.*.php
+web/sites/*/services*.yml
+web/sites/*/files
+web/sites/*/private
+web/sites/simpletest
+web/sites/default/files*
+*.sql*
+
 
 # Directories specific to this template
-node_modules/*
-libraries
-modules/contrib
-profiles/contrib
-themes/contrib
+*node_modules/*
+web/libraries
+web/modules/contrib
+web/profiles/contrib
+web/themes/contrib
 
 # Files and directories for common development environments, loosely inherited from BLT Project
 # @see https://github.com/acquia/blt-project/blob/11.x/.gitignore

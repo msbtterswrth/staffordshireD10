@@ -1,0 +1,18 @@
+/*COLORS*/
+$xl-gray: #f0f0f0;
+$lt-gray: #d8d8d8;
+$md-gray: #3c3d40; 
+$gray: #231F20;
+$blue: #43527e;
+$lt-blue: lighten($blue, 15%);
+$dk-blue: darken($blue, 15%);
+$green: #a6bb51;
+$orange: #E87F4C;
+$gold: #D89C4D;
+$red: #a63428;
+
+/*FONTS*/
+$font-rb: 'Roboto', sans-serif;
+
+//CSS ANIMATIONS
+$cubic: cubic-bezier(0.0, 0.0, 0.2, 1);

@@ -1,0 +1,115 @@
+.section {
+    padding: 0;
+    &.has-bg {
+        padding: 50px 0;
+        .heading {            
+            &::after {
+                background: #fff;
+            }
+        }
+        &.lt-gray {
+            background: $lt-gray; 
+        }
+        &.md-gray {
+            background: $gray; 
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+        &.gray {
+            background: $gray; 
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+        &.blue {
+            background: $blue;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+        &.lt-blue {
+            background: $lt-blue;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+        &.dk-blue {
+            background: $dk-blue;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+        &.gold {
+            background: $gold;
+            .heading {            
+                &::after {
+                    background: $gray;
+                }
+            }
+        }
+        &.green {
+            background: $green;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+        &.orange {
+            background: $orange;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    font-weight: bold; 
+                }
+            }
+        }
+    }
+    .heading {
+        margin: 0 auto 30px;
+        max-width: 80%;
+        position: relative;
+        text-align: center;
+        @include breakpoint(sm-max) {
+            max-width: none;
+        }
+        &::after {
+            background: $lt-blue;
+            content: "";
+            height: 3px;
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+        }
+    }
+}

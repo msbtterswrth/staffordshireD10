@@ -1,0 +1,7 @@
+<article{{ attributes }}>
+  <p><em>Posted on {{ node.changed.value|format_date('medium') }}</em></p>
+  {{ content.body }}
+  <div class="tags">
+    {{ content.field_tags }}
+  </div>
+</article>

@@ -1,0 +1,57 @@
+.featured-media {   
+    margin: 50px 0;
+    &.left {
+        .inner {
+            grid: auto / 60% 40%;
+            grid-auto-flow: dense;
+            @include breakpoint(sm-max) {
+                grid: auto / 100%;           
+            }
+        }
+    }
+    &.right {
+        .inner {
+            grid: auto / 40% 60%;
+            grid-auto-flow: dense;
+            @include breakpoint(sm-max) {
+                grid: auto / 100%;        
+            }
+            .img {
+                grid-column: 2;
+                @include breakpoint(sm-max) {
+                    grid-column: 1;           
+                }
+            }
+            
+        }
+    }  
+    .inner {
+        display: grid;
+        grid-gap: 50px;
+        margin: 0 auto;
+        @include breakpoint(sm-max) {
+            grid-gap: 20px;
+        }
+        .blurb {
+            align-self: center;
+            h2 {
+                font-size: 36px;
+                letter-spacing: 0;
+                line-height: 40px;
+                text-transform: none;
+            }
+            p {
+                font-size: 21px;
+                line-height: 28px;
+            }
+        }
+        .img {
+            @include breakpoint(sm-max) {
+                margin-bottom: 20px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

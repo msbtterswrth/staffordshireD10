@@ -1,0 +1,39 @@
+staffordshire.xs:
+  label: XS (up to 767px)
+  mediaQuery: 'all and (max-width: 767px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+staffordshire.sm:
+  label: SM (between 768px and 991px)
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 991px)'
+  weight: 1
+  multipliers:
+    - 1x
+staffordshire.sm-max:
+  label: SM-MAX (up to 991px)
+  mediaQuery: 'all and (max-width: 991px)'
+  weight: 1
+  multipliers:
+    - 1x
+staffordshire.md:
+  label: MD (between 992px and 1199px)
+  mediaQuery: 'all and (min-width: 992px) and (max-width: 1199px)'
+  weight: 2
+  multipliers:
+    - 1x
+staffordshire.lg:
+  label: LG (over 1200px)
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+staffordshire.xl:
+  label: XL (over 1400px)
+  mediaQuery: 'all and (min-width: 1400px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x

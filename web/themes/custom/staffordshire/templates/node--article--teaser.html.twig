@@ -1,0 +1,5 @@
+<article{{ attributes.addClass('post') }}>
+  <h3><a href="{{ url }}">{{label}}</a></h3>
+  <p><em>Updated on {{ node.changed.value|format_date('medium') }}</em></p>
+  {{ content.body }}... <a href="{{ url }}">Read More</a>
+</article>
