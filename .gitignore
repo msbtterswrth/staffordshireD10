@@ -15,7 +15,7 @@ web/sites/default/files*
 
 
 # Directories specific to this template
-*node_modules/*
+node_modules/*
 web/libraries
 web/modules/contrib
 web/profiles/contrib
@@ -108,3 +108,4 @@ oauth_keys/
 
 # env-file
 /.env*
+web/sites/default/settings.php
